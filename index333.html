@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR portal</title>
+    <link rel="icon" href="employee.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: arial,sans-serif;
+            background-color: rgba(48, 27, 170, 0.542);
+        }
+        header,footer{
+            background-color: rgb(84, 159, 212);
+            color:rgba(255, 255, 255, 0.877);
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+            display: inline;
+            padding: 10px;
+            
+        }
+        .navitem a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.858);
+
+        }
+        .registerfrom{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .empoloyeetable{
+            text-align: center;
+        }
+        table{
+            text-align: center ;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid  rgb(4, 41, 68);
+            padding: 5px;
+        }
+        .contactus{
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Company HR portal  </h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee directory">Employee  Directory</a></li>
+                <li class="navitem"><a href="#contect us">Contect us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <image src="rajjj.png" style="width: 100%; height: 400px;"></image>
+    <section id="employee registration" class="registerfrom">
+        <h2>Employee Registration</h2>
+        <p>Fill the below from to register as employee</p>
+        <form>
+            <label for="Name">Name:</label>
+            <input type="text" id="name"><br><br>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email"><br><br>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age"><br><br>
+           <label for="role">Select role:</label>
+           <select>
+                   <option>Software Engineer</option>
+                   <option>Product Manager</option>
+                   <option>Designer</option>
+                   <option>HR reprentative</option>
+           </select><br><br>
+           <label for="Select joinig Date">Select joinig Date:</label>
+           <input type="date" id="Select joinig Date"><br><br>
+           <input type="submit">
+           <input type="reset">
+
+        </form>
+
+    </section>
+    <section id="employee directory" class="empoloyeetable">
+        <h2>Employee directory</h2>
+        <p>List of all Registerd employee. </p>
+        <table class="table">
+            <tr>
+                <th>Employee Id</th>
+                <th>Empolyee Name</th>
+                <th>Employee role</th>
+
+            </tr>
+            <tr>
+                <td>255</td>
+                <td>Md raj</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>634</td>
+                <td>Jai Dixit</td>
+                <td>Product Manager</td>
+            </tr>
+             <tr>
+                <td>654</td>
+                <td>Neha Agrwal</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>635</td>
+                <td>sanju roy</td>
+                <td>HR reprentative</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <section id="contect us" class="contactus">
+        <h2>Contact us</h2>
+        <p>You can contact us compony@official.com or vist us between 9AM-5PM</p>
+       
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Compony Name </p>
+    </footer>
+
+</body>
+</html>
